@@ -13,8 +13,7 @@ pipeline{
         always{
             echo "hi"
         }
-        notifications{
-            success{
+        success{
                 mail(to:"sampath760@gmail.com",subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Yay, we passed.")
             }
             failure{
@@ -23,5 +22,3 @@ pipeline{
             }
         }
     }
-        
-}
