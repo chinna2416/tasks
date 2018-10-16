@@ -5,7 +5,8 @@ node{
     }
     stage('Compile-Package'){
         sh 'mvn package'
-    }catch(err){
+    }
+    catch(err){
         currentBuild.result='FAILED'
         throw err
     }
