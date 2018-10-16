@@ -1,11 +1,13 @@
 pipeline{
-    agentany
+    agent any
     stages{
         stage("Checkout"){
-            scm checkout
+            steps{
             git 'https://github.com/chinna2416/tasks.git'
         }
-        stage("Build"){
+        }
+        stage("Build")
+         step{
             sh "mvn clean package"
         }
     }
@@ -14,11 +16,11 @@ pipeline{
             echo "hi"
         }
         success{
-                mail(to:"sampath760@gmail.com",subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Yay, we passed.")
+                mail(to:"sampath760@gmail.com",subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: " we passed.")
             }
             failure{
-                mail(to:"sampath760@gmail.com",subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Boo, we failed.")
+                mail(to:"sampath760@gmail.com",subject:"FAILURE: ${currentBuild.fullDisplayName}", body: " we failed.")
             
             }
         }
-    }
+  }     
