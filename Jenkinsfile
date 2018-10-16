@@ -9,6 +9,7 @@ pipeline {
                steps {
                            sh 'mvn package'
                }
+            }
         }
     }
     post {
@@ -16,7 +17,6 @@ pipeline {
             junit '**/target/*.xml'
         }
         failure {
-            mail to: sampath760@gmail.com, subject: 'The Pipeline failed :('
+            mail to: sampath760@gmail.com, subject: 'The Pipeline failed '
         }
-    }
-}
+        }
