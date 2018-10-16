@@ -20,3 +20,4 @@ pipeline {
             mail to: sampath760@gmail.com, subject: 'The Pipeline failed '
         }
         }
+}
