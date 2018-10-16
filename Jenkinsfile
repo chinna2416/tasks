@@ -1,12 +1,12 @@
 pipeline{
     agent any
     stages{
-        stage("Checkout"){
+        stage('Checkout'){
             steps{
             git 'https://github.com/chinna2416/tasks.git'
         }
         }
-        stage("Build")
+        stage('Build')
          steps{
             sh "mvn clean package"
         }
