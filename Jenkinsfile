@@ -11,7 +11,7 @@ pipeline{
                 sh 'mvn clean install'
             }
         }
-        post
+        post{
             always{
                 echi "hi"
             }
@@ -21,3 +21,4 @@ pipeline{
             }
         }
     }
+}
