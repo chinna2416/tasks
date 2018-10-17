@@ -15,10 +15,12 @@ pipeline{
             always{
                 echi "hi"
             }
+            stage{
             success{
                 mail(to:"sampath760@gmail.com",subject:"SUCCESS: ${currentBuild.fullDisplayName}",
                 body: " we passed.")
             }
         }
-    }
+     }
+  }
 }
