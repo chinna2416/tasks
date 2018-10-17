@@ -18,10 +18,10 @@ pipeline {
         echo "hey"
     }
     success {
-      mail to:"sampath760@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Yay, we passed."
+      mail to:"sampath4ms@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Yay, we passed."
     }
     failure {
-      mail to:"sampath760@gmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Boo, we failed."
+      mail to:"sampath4ms@gmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Boo, we failed."
        }
   }
 }
