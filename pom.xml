@@ -21,15 +21,15 @@
 </project>
 <distributionManagement>
 	<repository>
-		<id>deploymentRepo</id>
-		<name>Internal Releases</name>
-		<url>http://52.91.218.133:8081/repository/maven-releases/</url>
+		<id>deployment</id>
+		<name>sample-release</name>
+		<url>http://18.233.101.105:8081/repository/sample-release/</url>
 	</repository>
  
 	<snapshotRepository>
-		<id>deploymentRepo</id>
-		<name>Internal Releases</name>
-		<url>http://52.91.218.133:8081/repository/maven-snapshots/</url>
+		<id>deployment</id>
+		<name>sample-sanpshot</name>
+		<url>http://18.233.101.105:8081/repository/sample-sanpshot/</url>
 	</snapshotRepository>
 </distributionManagement>
 
