@@ -14,7 +14,7 @@ pipeline{
 	    }
 	        post{
 	            always{
-	                echo "hi"
+	                echo "hello"
 	            }
 	            success{
 	                mail to:"sampath760@gmail.com",subject:"SUCCESS: ${currentBuild.fullDisplayName}",
