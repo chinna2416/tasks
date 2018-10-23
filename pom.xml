@@ -19,3 +19,18 @@
     <finalName>java-web-project</finalName>
   </build>
 </project>
+<distributionManagement>
+	<repository>
+		<id>deploymentRepo</id>
+		<name>Internal Releases</name>
+		<url>http://52.91.218.133:8081/repository/maven-releases/</url>
+	</repository>
+ 
+	<snapshotRepository>
+		<id>deploymentRepo</id>
+		<name>Internal Releases</name>
+		<url>http://52.91.218.133:8081/repository/maven-snapshots/</url>
+	</snapshotRepository>
+</distributionManagement>
+
+</project>
