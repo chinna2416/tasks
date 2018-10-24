@@ -21,14 +21,14 @@
 </project>
 <distributionManagement>
 	<repository>
-		<id>central</id>
-		<name>Internal Releases</name>
-		<url>http://34.226.121.38:8081/repository/sample-release/</url>
+		<id>deployement</id>
+		<name>sample-release</name>
+		<url>http://18.206.119.90:8081/repository/sample-release/</url>
 	</repository>
  
 	<snapshotRepository>
-		<id>snapshots</id>
-		<name>Internal Releases</name>
-		<url>http://34.226.121.38:8081/repository/sample-sanpshot/</url>
+		<id>deployement</id>
+		<name>sample-sanpshot</name>
+		<url>http://18.206.119.90:8081/repository/sample-sanpshot/</url>
 	</snapshotRepository>
 </distributionManagement>
