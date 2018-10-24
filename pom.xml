@@ -23,12 +23,12 @@
 	<repository>
 		<id>deployement</id>
 		<name>sample-release</name>
-		<url>http://18.234.208.235:8081/repository/sample-release/</url>
+		<url>http://54.227.232.120:8081/repository/sample-release/</url>
 	</repository>
  
 	<snapshotRepository>
 		<id>deployement</id>
 		<name>sample-sanpshot</name>
-		<url>http://18.234.208.235:8081/repository/sample-sanpshot/</url>
+		<url>http://54.227.232.120:8081/repository/sample-sanpshot/</url>
 	</snapshotRepository>
 </distributionManagement>
