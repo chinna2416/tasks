@@ -27,10 +27,10 @@
 	</repository>
  
 	<snapshotRepository>
-		<id>deploymentReport</id>
+		<id>deploymentRepo</id>
 		<name>Internal Releases</name>
-		<url>http://34.226.121.38:8081repository/sample-sanpshot/</url>
+		<url>http://34.226.121.38:8081/repository/sample-sanpshot/</url>
 	</snapshotRepository>
 </distributionManagement>
 
-</project>
+
